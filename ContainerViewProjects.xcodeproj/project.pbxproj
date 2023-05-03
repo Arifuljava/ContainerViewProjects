@@ -20,6 +20,8 @@
 		254EB3D32A024AE300AE8E78 /* SecondFragmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EB3D12A024AE300AE8E78 /* SecondFragmentViewController.swift */; };
 		254EB3D42A024AE300AE8E78 /* SecondFragmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 254EB3D22A024AE300AE8E78 /* SecondFragmentViewController.xib */; };
 		254EB3D62A024B1600AE8E78 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EB3D52A024B1600AE8E78 /* SecondController.swift */; };
+		254EB3D82A02562E00AE8E78 /* MapSecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EB3D72A02562E00AE8E78 /* MapSecondController.swift */; };
+		254EB3DA2A02616400AE8E78 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EB3D92A02616400AE8E78 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		254EB3D12A024AE300AE8E78 /* SecondFragmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondFragmentViewController.swift; sourceTree = "<group>"; };
 		254EB3D22A024AE300AE8E78 /* SecondFragmentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondFragmentViewController.xib; sourceTree = "<group>"; };
 		254EB3D52A024B1600AE8E78 /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
+		254EB3D72A02562E00AE8E78 /* MapSecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSecondController.swift; sourceTree = "<group>"; };
+		254EB3D92A02616400AE8E78 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,9 @@
 				254EB39F2A0206C700AE8E78 /* AppDelegate.swift */,
 				254EB3A12A0206C700AE8E78 /* SceneDelegate.swift */,
 				254EB3A32A0206C700AE8E78 /* ViewController.swift */,
+				254EB3D92A02616400AE8E78 /* TableViewController.swift */,
 				254EB3D52A024B1600AE8E78 /* SecondController.swift */,
+				254EB3D72A02562E00AE8E78 /* MapSecondController.swift */,
 				254EB3A52A0206C700AE8E78 /* Main.storyboard */,
 				254EB3A82A0206C800AE8E78 /* Assets.xcassets */,
 				254EB3AA2A0206C800AE8E78 /* LaunchScreen.storyboard */,
@@ -272,7 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				254EB3D02A0247F900AE8E78 /* SecondViewController.swift in Sources */,
+				254EB3D82A02562E00AE8E78 /* MapSecondController.swift in Sources */,
 				254EB3D32A024AE300AE8E78 /* SecondFragmentViewController.swift in Sources */,
+				254EB3DA2A02616400AE8E78 /* TableViewController.swift in Sources */,
 				254EB3A42A0206C700AE8E78 /* ViewController.swift in Sources */,
 				254EB3D62A024B1600AE8E78 /* SecondController.swift in Sources */,
 				254EB3A02A0206C700AE8E78 /* AppDelegate.swift in Sources */,

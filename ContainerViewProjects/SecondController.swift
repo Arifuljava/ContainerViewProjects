@@ -6,11 +6,25 @@
 //
 
 import UIKit
+import WebKit
 
-class SecondController: UIViewController {
+class SecondController: UIViewController, WKNavigationDelegate {
 
+    @IBOutlet weak var webview: WKWebView!
+    let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        activityIndicator.startAnimating()
+        webview = WKWebView()
+        webview.navigationDelegate = self
+        self.view = webview
+        let loadURL = "https://www.patreon.com/iosacademy"
+        let url = URL(string: loadURL)!
+        webview.load(URLRequest(url: url))
+        activityIndicator.stopAnimating()
+        webview.allowsBackForwardNavigationGestures = true
+        
 
 
     }
@@ -18,4 +32,15 @@ class SecondController: UIViewController {
 
     
 
+}
+
+
+extension ViewController : WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        
+    }
 }

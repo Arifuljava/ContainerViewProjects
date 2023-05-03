@@ -67,7 +67,7 @@ class ViewController: UIViewController {
    
     @IBAction func stsrtAcButton(_ sender: UIButton) {
         indicator.stopAnimating()
-        let sec = storyboard?.instantiateViewController(identifier: "Ssecondvc") as! SecondController
+        let sec = storyboard?.instantiateViewController(identifier: "mainmap") as! MapSecondController
     present(sec,animated: true)
         
         
