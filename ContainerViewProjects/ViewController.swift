@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var pickerView: UIPickerView!
     var arr = Array<String>()
     
+    @IBOutlet weak var secondPickerView: UIPickerView!
+    var hour = Array<String>()
+    var min = Array<String>()
+    var sec = Array<String>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -47,6 +52,15 @@ class ViewController: UIViewController {
               for i in 0..<21{
                   arr.insert("item "+(i+1).description, at: i)
               }
+        //secondpickerview
+        secondPickerView.delegate = self
+        secondPickerView.dataSource = self
+        for i in 0...23{
+            hour.insert(i.description, at: i)
+        }
+        min = ["00","05","10","15","20","25","30","35","40","45","50","55","60"]
+        sec = min
+        
         
     }
    
@@ -66,11 +80,23 @@ class ViewController: UIViewController {
 
 extension ViewController : UIPickerViewDataSource{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+        return 3
     }
       
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return arr.count
+        var numberofRaws = 0
+        switch component{
+        case 0:
+            numberofRaws = 24
+        case 1 :
+            numberofRaws = 12
+        case 2 :
+            numberofRaws = 12
+        default:
+            numberofRaws = 0
+            
+        }
+        return numberofRaws
     }
       
 }
@@ -79,9 +105,35 @@ extension ViewController : UIPickerViewDataSource{
 extension ViewController : UIPickerViewDelegate{
       
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return arr[row]
+        var titile = ""
+        switch component {
+        case 0 :
+            titile = hour[row]
+        case 1 :
+            titile = min[row]
+        case 2 :
+            titile = sec[row]
+        default:
+            titile = ""
+        }
+        return titile;
     }
-}  
+    //
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, forComponent component: Int)  {
+        switch component{
+        case 0 :
+            message  =  hour[row].description
+        case 1 :
+            message  = min[row].description
+        case 2 :
+            message = min[row].description
+        default:
+            message = ""
+            
+        }
+    }
+}
+var message = "";
 
 
 

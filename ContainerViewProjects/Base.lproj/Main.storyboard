@@ -91,6 +91,12 @@
                                                             <action selector="stoptouched:" destination="BYZ-38-t0r" eventType="touchDown" id="Fkh-rq-GYS"/>
                                                         </connections>
                                                     </button>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NhQ-oX-BTl">
+                                                        <rect key="frame" x="8" y="583" width="398" height="216"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="216" id="RiM-aO-54v"/>
+                                                        </constraints>
+                                                    </pickerView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <constraints>
@@ -105,10 +111,13 @@
                                                     <constraint firstAttribute="trailing" secondItem="GeN-PG-bzE" secondAttribute="trailing" constant="197" id="R2d-tB-boY"/>
                                                     <constraint firstItem="6dh-r2-oy4" firstAttribute="top" secondItem="8LT-BB-Gzq" secondAttribute="bottom" constant="35" id="WGc-3b-Cb5"/>
                                                     <constraint firstItem="kBz-W5-Zwy" firstAttribute="top" secondItem="6dh-r2-oy4" secondAttribute="bottom" constant="12" id="dW3-Jd-xwt"/>
+                                                    <constraint firstItem="NhQ-oX-BTl" firstAttribute="top" secondItem="kBz-W5-Zwy" secondAttribute="bottom" constant="24" id="lnA-rP-9Y7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="NhQ-oX-BTl" secondAttribute="trailing" constant="8" id="may-SG-TQ8"/>
                                                     <constraint firstItem="6dh-r2-oy4" firstAttribute="leading" secondItem="FWY-GQ-DEf" secondAttribute="leading" constant="8" id="mjd-hB-MtK"/>
                                                     <constraint firstAttribute="trailing" secondItem="2V5-F5-lJs" secondAttribute="trailing" constant="8" id="nri-IK-YNX"/>
                                                     <constraint firstAttribute="trailing" secondItem="8LT-BB-Gzq" secondAttribute="trailing" constant="8" id="rKw-2V-oBc"/>
                                                     <constraint firstAttribute="trailing" secondItem="kBz-W5-Zwy" secondAttribute="trailing" constant="8" id="u3J-Ph-aLO"/>
+                                                    <constraint firstItem="NhQ-oX-BTl" firstAttribute="leading" secondItem="FWY-GQ-DEf" secondAttribute="leading" constant="8" id="vdZ-od-Cc8"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -151,6 +160,7 @@
                     <connections>
                         <outlet property="indicator" destination="GeN-PG-bzE" id="sjH-Zj-TgD"/>
                         <outlet property="pickerView" destination="6dh-r2-oy4" id="ajZ-IM-bhw"/>
+                        <outlet property="secondPickerView" destination="NhQ-oX-BTl" id="m9j-Dh-DNV"/>
                         <outlet property="startButton" destination="2V5-F5-lJs" id="ngD-dm-b2Z"/>
                         <outlet property="stopButton" destination="8LT-BB-Gzq" id="n0h-b6-Gv8"/>
                     </connections>
