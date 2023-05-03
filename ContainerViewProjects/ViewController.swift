@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     var min = Array<String>()
     var sec = Array<String>()
     
+    @IBOutlet weak var stsrtActivity: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -64,6 +65,13 @@ class ViewController: UIViewController {
         
     }
    
+    @IBAction func stsrtAcButton(_ sender: UIButton) {
+        indicator.stopAnimating()
+        let sec = storyboard?.instantiateViewController(identifier: "Ssecondvc") as! SecondController
+    present(sec,animated: true)
+        
+        
+    }
     @IBAction func stoptouched(_ sender: UIActivityIndicatorView) {
         indicator.stopAnimating()
     }
@@ -134,6 +142,7 @@ extension ViewController : UIPickerViewDelegate{
     }
 }
 var message = "";
+
 
 
 

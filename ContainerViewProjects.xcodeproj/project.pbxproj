@@ -16,6 +16,10 @@
 		254EB3B72A0206C800AE8E78 /* ContainerViewProjectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EB3B62A0206C800AE8E78 /* ContainerViewProjectsTests.swift */; };
 		254EB3C12A0206C800AE8E78 /* ContainerViewProjectsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EB3C02A0206C800AE8E78 /* ContainerViewProjectsUITests.swift */; };
 		254EB3C32A0206C800AE8E78 /* ContainerViewProjectsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EB3C22A0206C800AE8E78 /* ContainerViewProjectsUITestsLaunchTests.swift */; };
+		254EB3D02A0247F900AE8E78 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EB3CF2A0247F900AE8E78 /* SecondViewController.swift */; };
+		254EB3D32A024AE300AE8E78 /* SecondFragmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EB3D12A024AE300AE8E78 /* SecondFragmentViewController.swift */; };
+		254EB3D42A024AE300AE8E78 /* SecondFragmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 254EB3D22A024AE300AE8E78 /* SecondFragmentViewController.xib */; };
+		254EB3D62A024B1600AE8E78 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EB3D52A024B1600AE8E78 /* SecondController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		254EB3BC2A0206C800AE8E78 /* ContainerViewProjectsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContainerViewProjectsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		254EB3C02A0206C800AE8E78 /* ContainerViewProjectsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewProjectsUITests.swift; sourceTree = "<group>"; };
 		254EB3C22A0206C800AE8E78 /* ContainerViewProjectsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewProjectsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		254EB3CF2A0247F900AE8E78 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		254EB3D12A024AE300AE8E78 /* SecondFragmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondFragmentViewController.swift; sourceTree = "<group>"; };
+		254EB3D22A024AE300AE8E78 /* SecondFragmentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondFragmentViewController.xib; sourceTree = "<group>"; };
+		254EB3D52A024B1600AE8E78 /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +110,14 @@
 				254EB39F2A0206C700AE8E78 /* AppDelegate.swift */,
 				254EB3A12A0206C700AE8E78 /* SceneDelegate.swift */,
 				254EB3A32A0206C700AE8E78 /* ViewController.swift */,
+				254EB3D52A024B1600AE8E78 /* SecondController.swift */,
 				254EB3A52A0206C700AE8E78 /* Main.storyboard */,
 				254EB3A82A0206C800AE8E78 /* Assets.xcassets */,
 				254EB3AA2A0206C800AE8E78 /* LaunchScreen.storyboard */,
 				254EB3AD2A0206C800AE8E78 /* Info.plist */,
+				254EB3CF2A0247F900AE8E78 /* SecondViewController.swift */,
+				254EB3D12A024AE300AE8E78 /* SecondFragmentViewController.swift */,
+				254EB3D22A024AE300AE8E78 /* SecondFragmentViewController.xib */,
 			);
 			path = ContainerViewProjects;
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254EB3D42A024AE300AE8E78 /* SecondFragmentViewController.xib in Resources */,
 				254EB3AC2A0206C800AE8E78 /* LaunchScreen.storyboard in Resources */,
 				254EB3A92A0206C800AE8E78 /* Assets.xcassets in Resources */,
 				254EB3A72A0206C700AE8E78 /* Main.storyboard in Resources */,
@@ -258,7 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254EB3D02A0247F900AE8E78 /* SecondViewController.swift in Sources */,
+				254EB3D32A024AE300AE8E78 /* SecondFragmentViewController.swift in Sources */,
 				254EB3A42A0206C700AE8E78 /* ViewController.swift in Sources */,
+				254EB3D62A024B1600AE8E78 /* SecondController.swift in Sources */,
 				254EB3A02A0206C700AE8E78 /* AppDelegate.swift in Sources */,
 				254EB3A22A0206C700AE8E78 /* SceneDelegate.swift in Sources */,
 			);
